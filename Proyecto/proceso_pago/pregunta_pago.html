@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Confirmar Pago</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Confirmar Pago</h1>
+        </header>
+        <div class="contenido">
+            <h2>Detalles de la Reserva</h2>
+            <p>Tu ID de reserva es: <span id="reservaId"></span></p>
+            <p>Precio: <span id="precio"></span>€</p>
+            <button id="pagarEnPersona" class="metodo_pago">Pagar en Persona</button>
+            <button id="pagarConTarjeta" class="metodo_pago">Pagar con Tarjeta</button>
+        </div>
+        <script>
+            // Obtener los parámetros de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const reservaId = urlParams.get('reserva_id');
+            const precio = urlParams.get('precio');
+            
+            document.getElementById('reservaId').textContent = reservaId;
+            document.getElementById('precio').textContent = precio;
+
+            document.getElementById('pagarEnPersona').addEventListener('click', function() {
+                window.location.href = '../pag_secundarias/Reservas.html';
+            });
+
+            document.getElementById('pagarConTarjeta').addEventListener('click', function() {
+                window.location.href = `payment.html?reserva_id=${reservaId}&precio=${precio}`;
+            });
+        </script>
+
+        <script src="../javascript/script_preguntapago.js"></script>
+    </body>
+</html>

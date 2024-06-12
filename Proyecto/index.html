@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Deportes Castellar</title>
+
+        <link rel="icon" href="img/iconos/icon.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <!--Etiquetas 'link', que sirven para indicar el icono de la página web y para el enlace externo de la hoja de estilos css.-->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <meta name="description" content="Página web sobre la reserva de establecimientos deportivos en Castellar de la Frontera.">
+        <meta name="author" content=" Mª Gloria Mariscal Coronil">
+        <meta name="keywords" content="Castellar de la Frontera, pueblo, deportes, reserva, deportivo, padel, tenis, fútbol.">
+        <meta http-equiv="refresh" content="360">
+        <!--Conjunto de las distintas etiquetas 'meta' que sirven, respectivamente para: la aparición de caracteres especiales, la visualización adecuada de la página en los distintos dispositivos y resoluciones, 
+        la breve descripción de la página web, indicar el autor de la página web, las palabras clave sobre el sitio, y para que la página web se refresque cada 6 minutos.-->
+    
+        <!--Enlace externo hacia el script para configurar las cookies.-->
+        <script src="javascript/cookies.js" defer></script>
+    </head>
+
+    <!--Body de la página web, con una estructura común a todas las páginas secundarias, que contiene un header o cabecera con el logo y un mapa de navegación que enlaza a las distintas páginas, el 
+    contenido en sí de cada página, y un pie de página o footer que contiene los enlaces a las redes sociales y a otras páginas secundarias.-->
+    <body>
+        <header>
+            <a href="index.html"><img src="img/iconos/logo.png" id="logo" width="250" height="70"></a>
+            <p></p>
+            <nav>
+                <ul>
+                    <li><a href="pag_secundarias/Historia.html">Historia</a></li>
+                    <li><a href="pag_secundarias/Instalaciones.html">Instalaciones</a></li>
+                    <li><a href="pag_secundarias/Reservas.html">Reservas</a></li>
+                    <li><a href="pag_secundarias/Empresa.html">Empresa</a></li>
+                    <li><a href="pag_secundarias/Consultas.html">Consultas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenido">
+            <div class="introduccion">
+                <h1  class="titulo">Sistema de reservas online Deportes Castellar</h1>
+                <p>
+                    Deportes Castellar es un <b>sistema de reservas online</b> donde podrás gestionar de manera sencilla y rápida las reservas de las instalaciones deportivas que se encuentran en la
+                    localidad de Castellar de la Frontera.
+                    Contamos con distintas <b>instalaciones</b>, como son pistas de pádel, una pista de tenis o un campo de fútbol.
+                    Nuestro objetivo es facilitar el acceso a dichos establecimientos y fomentar una comunidad activa y saludable. 
+                    Además, podrás realizar <b>consultas</b> de manera telefónica o por correo electrónico para las posibles dudas, y conocer un poco más de la historia de nuestro encantador pueblo.
+                </p>
+            </div>
+
+            <!--Conjunto de "div" que crean la estructura de los recuadros que hay en la página.-->
+            <h2>¿Cómo reservar?</h2>
+            <div class="procedimiento">
+                <div class="recuadro">
+                    <h3 class="titulo_procedimiento">Seleccione una instalación</h3>
+                    <p>En la sección de "Instalaciones", elija el establecimiento que desee reservar.</p>
+                </div>
+                <div class="recuadro">
+                    <h3 class="titulo_procedimiento">Rellene el formulario</h3>
+                    <p>En la sección de "Reservas", complete el formulario necesario para realizar tu reserva.</p>
+                </div>
+                <div class="recuadro">
+                    <h3 class="titulo_procedimiento">Elija el método de pago</h3>
+                    <p>Puede pagar en el momento con tarjeta o en ejectivo en el Ayuntamiento de Castellar de la Frontera, con 2 horas mínimo de antelación a la reserva.</p>
+                </div>
+                <div class="recuadro">
+                    <h3 class="titulo_procedimiento">Consulte dudas</h3>
+                    <p>Si tiene alguna duda, diríjase a "Consultas" y nuestro equipo le ayudará.</p>
+                </div>
+            </div>
+
+            <!--Otro conjunto de "div" que crea los cuadrados que hay en la página web.-->
+            <h2>Sobre nosotros</h2>
+            <div class="sobre_nosotros">
+                <div class="cuadrado">
+                    <h2>Disponibilidad las 24 horas</h2>
+                    <p>El servicio se encuentra disponible en todo momento, con total disponibilidad.</p>
+                </div>
+                <div class="cuadrado">
+                    <h2>Calidad garantizada</h2>
+                    <p>Los servicios que ofrecemos cuentan con la mejor calidad posible.</p>
+                </div>
+                <div class="cuadrado">
+                    <h2>Experiencia</h2>
+                    <p>Con numerosos años en la industria de las tecnologías, contamos con la experiencia necesaria para satisfacer sus necesidades.</p>
+                </div>
+                <div class="cuadrado">
+                    <h2>Innovación y tecnología avanzada</h2>
+                    <p>Contamos con una constante innovación y una tecnología avanzada que ayudarán a dar soluciones a sus cuestiones.</p>
+                </div>
+            </div>
+
+
+            <!--Fragmento de google maps con una localización concreta.-->
+            <h2>Localización</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191.06001836735723!2d-5.42018806966904!3d36.28587253896524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0ce8438a7f9fd3%3A0x17db7859a26fca0!2sAyuntamiento%20de%20Castellar%20de%20la%20Frontera!5e1!3m2!1ses!2ses!4v1717052978341!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <p></p>
+        
+        <footer class="pie_pag">
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/"><img src="img/iconos/facebook.png" width="20" height="20"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><img src="img/iconos/Instagram.png" width="20" height="20"></a></li>
+                <li><a target="_blank" href="https://www.twitter.com/"><img src="img/iconos/twitter.png" width="20" height="20"></a></li>
+            </ul>
+            <p></p>
+            <ul>
+                <li><a href="pag_secundarias/Acerca de.html">Acerca de</a></li>
+                <li><a href="pag_secundarias/Política de privacidad.html">Política de privacidad</a></li>
+                <li><a href="pag_secundarias/Terminos y Condiciones.html">Términos y condiciones</a></li>
+            </ul>
+            <p>&copy; 2024 Deportes Castellar</p>
+        </footer>
+
+        <!--Enlace esterno al script del index.-->
+        <script src="javascript/script_index.js"></script>
+
+        <!--Div que sirve para que aparezca el mensaje de las cookies.-->
+        <div id="consentirCookies" class="consentir_cookies">
+            <p>Esta página utiliza cookies para mejorar la experiencia del usuario. ¿Aceptas el uso de cookies?</p>
+            <button id="aceptarCookies">Aceptar</button>
+            <button id="rechazarCookies">Rechazar</button>
+        </div>
+    </body>
+</html>

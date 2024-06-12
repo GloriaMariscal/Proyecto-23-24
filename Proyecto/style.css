@@ -1,0 +1,288 @@
+body {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif; /* Define la tipografía del body */
+    text-align: center; /* Centra el texto del body */
+    color:#5a6572; /* Indica el color de la letra */
+    margin: 0; /* Elimina el margen predeterminado que aplique el navegador al body */
+    padding: 0; /* Elimina cualquier relleno que contenga el body */
+    display: flex; /* Convierte el body en un contenedor flex */
+    flex-direction: column; /* Establece la dirección que tiene el contenedor flex en una columna */
+    min-height: 100vh; /* Establece la altura mínima de la ventana del navegador */
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    background-image: linear-gradient(-140deg, #66cccc -25%, #43505f 25%);
+}
+
+/* Estilos para el mapa de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: center; /* Centra los elementos en el menú */
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Tamaño base */
+    transition: font-size 0.3s ease; /* Transición suave */
+}
+
+nav ul li a:hover {
+    font-size: 20px; /* Tamaño aumentado al pasar el ratón */
+}
+
+h1 {
+    font-weight: bold;
+}
+
+/* Estilo para el contenido de la página */
+.contenido{
+    flex: 1;
+}
+
+/* Estilo para el título del index */
+.titulo {
+    color: #424f5e;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-image: linear-gradient(-140deg, #66cccc -25%, #43505f 25%);
+    color: #fff;
+    padding: 20px 0; /* Ajusta el relleno según sea necesario */
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Estilo para los cuadrados que aparecen en el index */
+.sobre_nosotros {
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-around; /* Distribuye los recuadros equitativamente */
+    flex-wrap: wrap; /* Envuelve los recuadros si no caben en una línea */
+    max-width: 1200px; /* Ancho máximo que tiene el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.titulo_procedimiento {
+    color: #308af8;
+}
+
+.procedimiento {
+    display: flex; /* Utiliza flexbox para alinear los recuadros en una fila */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Indica el margen superior */
+}
+
+.recuadro {
+    background-color: #e0e0e0; /* Color de fondo */
+    padding: 20px; /* Espacio interno */
+    margin: 10px; /* Espacio externo */
+    flex: 1; /* Permite que los recuadros crezcan para llenar el espacio disponible */
+    min-width: 250px; /* Ancho mínimo para los recuadros */
+}
+
+/*Cuadrados azules del index*/
+.cuadrado {
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+.formulario_consultas label {
+    font-weight: bold;
+}
+
+
+.error {
+    color: red;
+}
+
+
+/*cookies del index*/
+.consentir_cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: none; /* Por defecto no se muestra */
+}
+
+.consentir_cookies button {
+    background-color: #172e96;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.consentir_cookies button:hover {
+    background-color: #2a46c2;
+}
+
+
+
+/* Estilo de los formularios */
+form div {
+    display: block; /* Asegura que cada par de etiqueta y campo de entrada esté en una nueva línea */
+    margin-bottom: 15px; /* Espacio entre los elementos del formulario */
+}
+
+.imagen {
+    transition: transform 0.3s ease-in-out; /* Transición suave del cambio de tamaño */
+}
+.imagen:hover {
+    transform: scale(1.1); /* Hacer la imagen un poco más grande al pasar el ratón por encima */
+}
+
+
+
+/* Parte del carousel de imágenes en la página de instalaciones */
+.bloque_carousel {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes_carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagenes_carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btnant, .btnpos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btnant {
+    left: 10px;
+}
+
+.btnpos {
+    right: 10px;
+}
+
+
+
+/*Botón enviar que aparece en Reservas*/
+button#enviar {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button#enviar:hover {
+    transform: scale(1.1);
+    background-color: darkblue;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+.errorMessages {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+
+
+/* Estilos para los botones con clase metodo_pago que se encuentran en pregunta_pago.html */
+.metodo_pago {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Efectos de hover */
+.metodo_pago:hover {
+    transform: scale(1.1);
+    background-color: darkblue;
+}
+
+
+/*div y body de la página de politica de privacidad*/
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.cuerpo {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.titulos {
+    text-align: center;
+}

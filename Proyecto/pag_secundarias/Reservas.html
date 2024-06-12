@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deportes Castellar</title>
+
+    <link rel="icon" href="../img/iconos/icon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <meta name="description" content="Página web sobre la reserva de establecimientos deportivos en Castellar de la Frontera.">
+    <meta name="author" content=" Mª Gloria Mariscal Coronil">
+    <meta name="keywords" content="Castellar de la Frontera, pueblo, deportes, reserva, deportivo.">
+    <meta http-equiv="refresh" content="360">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/iconos/logo.png" width="250" height="70"></a>
+        
+        <p></p>
+
+        <nav>
+            <ul>
+                <li><a href="Historia.html">Historia</a></li>
+                <li><a href="Instalaciones.html">Instalaciones</a></li>
+                <li><a href="Reservas.html">Reservas</a></li>
+                <li><a href="Empresa.html">Empresa</a></li>
+                <li><a href="Consultas.html">Consultas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenido">
+        <div>
+            <h1>Reservas</h1>
+        </div>
+
+        <form class="formulario_reserva" id="reservaForm" action="../reserva.php" method="POST">
+            <div>
+                <label for="fecha">Fecha de Reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <span class="error" id="fechaError"></span>
+            </div>
+
+            <div>
+                <label for="tipo">Instalación deportiva: </label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">-------------------------------</option>
+                    <option value="padel_standard">Pista de pádel standard</option>
+                    <option value="padel_cristal">Pista de pádel cristal</option>
+                    <option value="tenis">Pista de tenis</option>
+                    <option value="futbol">Campo de fútbol</option>
+                </select>
+                <span class="error" id="tipoError"></span>
+            </div>
+
+            <div>
+                <label for="hora">Hora de reserva:</label>
+                <select id="hora" name="hora" required>
+                    <option value="">------------</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                </select>
+                <span class="error" id="horaError"></span>
+            </div>
+
+            <div>
+                <label for="luz">Elección de luz: </label>
+                <select id="luz" name="luz" required>
+                    <option value="">---------------------</option>
+                    <option value="luz_natural">Con luz natural</option>
+                    <option value="luz_artificial">Con luz artificial</option>
+                </select>
+                <span class="error" id="tipoError"></span>
+            </div>
+
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <span class="error" id="telefonoError"></span>
+            </div>
+
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            
+            <input type="hidden" id="precio" name="precio" value="">
+            
+            <div>
+                <button type="submit" id="enviar">Enviar</button>
+            </div>
+        </form>
+        <div id="error_mensaje" style="color: red;"></div>
+    </div>
+    <footer class="pie_pag">
+        <ul>
+            <li><a target="_blank" href="https://www.facebook.com/"><img src="../img/iconos/facebook.png" width="20" height="20"></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/"><img src="../img/iconos/Instagram.png" width="20" height="20"></a></li>
+            <li><a target="_blank" href="https://www.twitter.com/"><img src="../img/iconos/twitter.png" width="20" height="20"></a></li>
+        </ul>
+        <ul>
+            <li><a href="Acerca de.html">Acerca de</a></li>
+            <li><a href="Política de privacidad.html">Política de privacidad</a></li>
+            <li><a href="Terminos y Condiciones.html">Términos y condiciones</a></li>
+        </ul>
+        <p>&copy; 2024 Deportes Castellar</p>
+    </footer>
+
+    <script src="../javascript/script_reservas.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Deportes Castellar</title>
+
+        <link rel="icon" href="../img/iconos/icon.png" type="image/png">
+        <link rel="stylesheet" href="../style.css">
+        <!--Etiquetas 'link', que sirven para indicar el icono de la página web y para el enlace externo de la hoja de estilos css.-->
+
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="Página web sobre la reserva de establecimientos deportivos en Castellar de la Frontera.">
+        <meta name="author" content=" Mª Gloria Mariscal Coronil">
+        <meta name="keywords" content="Castellar de la Frontera, pueblo, deportes, reserva, deportivo.">
+        <meta http-equiv="refresh" content="360">
+        <!--Conjunto de las distintas etiquetas 'meta' que sirven, respectivamente para: la aparición de caracteres especiales, la visualicación adecuada de la página en los distintos dispositivos, 
+        la breve descripción de la página web, indicar el autor de la página web, las palabras clave sobre el sitio, y para que la página web se actualice cada 30 segundos.-->
+
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src="../img/iconos/logo.png" width="250" height="70"></a> 
+
+            <p></p>
+            
+            <nav>
+                <ul>
+                    <li><a href="Historia.html">Historia</a></li>
+                    <li><a href="Instalaciones.html">Instalaciones</a></li>
+                    <li><a href="Reservas.html">Reservas</a></li>
+                    <li><a href="Empresa.html">Empresa</a></li>
+                    <li><a href="Consultas.html">Consultas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contenido">
+
+
+        <div class="historia">
+            <h1>Historia</h1>
+            <img width="600px" height="400px" src="../img/pueblo/plaza.jpeg">
+            <p>Castellar de la Frontera es un municipio español situado en la provincia de Cádiz, en la comunidad autónoma de Andalucía. Forma parte de la comarca del Campo de Gibraltar. Limita con los 
+                municipios de San Roque, San Martín del Tesorillo, Jimena de la Frontera, Los Barrios y Alcalá de los Gazules, en el parque natural de los Alcornocales, en la llamada Ruta del Toro. El 
+                municipio cuenta con tres núcleos de población, que son Castellar Viejo (conocido coloquialmente como El Castillo), Castellar Nuevo y La Almoraima. El pueblo viejo fue declarado Monumento 
+                Histórico Artístico en 1963. Castellar es económicamente fructífero por el descorche de los chaparros de la zona. La temperatura es cálida, debido a la brisa mediterránea.
+            </p>
+            <p>
+                Desde el año 2019 Castellar pasa a formar parte de la asociación Los Pueblos Más Bonitos de España gracias al conjunto del Castillo de Castellar o Castellar Viejo.
+            </p> 
+            <p>   
+                Castellar es popular por su castillo medieval, un destacado atractivo turístico.
+            </p>
+
+            <img class="imagen" width="490px" height="300px" src="../img/pueblo/castillo.jpg">
+            <img class="imagen" width="450px" height="300px" src="../img/pueblo/castillo2.jpg">
+            <p></p>
+            <img class="imagen" width="500px" height="300px" src="../img/pueblo/castillo3.jpg">
+            <img class="imagen" width="500px" height="300px" src="../img/pueblo/pueblo.jpg">
+            <p></p>
+        </div>
+        </div>
+        <footer class="pie_pag">
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/"><img src="../img/iconos/facebook.png" width="20" height="20"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><img src="../img/iconos/Instagram.png" width="20" height="20"></a></li>
+                <li><a target="_blank" href="https://www.twitter.com/"><img src="../img/iconos/twitter.png" width="20" height="20"></a></li>
+            </ul>
+            <p></p>
+            <ul>
+                <li><a href="Acerca de.html">Acerca de</a></li>
+                <li><a href="Política de privacidad.html">Política de privacidad</a></li>
+                <li><a href="Terminos y Condiciones.html">Términos y condiciones</a></li>
+            </ul>
+            <p>&copy; 2024 Deportes Castellar</p>
+        </footer>
+
+        <script>
+            // Obtiene todas las imágenes con la clase "imagen"
+            var imagenes = document.querySelectorAll('.imagen');
+            
+            // Se crea la función con los eventos para cambiar el tamaño de las imágenes al pasar el ratón por encima.
+            imagenes.forEach(function(imagen) {
+                imagen.addEventListener('mouseover', function() {
+                    // Hacer la imagen un poco más grande
+                    imagen.style.transform = 'scale(1.1)';
+                });
+                
+                // Restablecer el tamaño original al quitar el ratón
+                imagen.addEventListener('mouseout', function() {
+                    imagen.style.transform = 'scale(1)';
+                });
+            });
+        </script>
+    </body>
+</html>
